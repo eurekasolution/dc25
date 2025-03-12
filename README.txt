@@ -18,3 +18,6 @@ HWP파일의 이름 : DC#01한문학과-홍길동.hwp
 
 1. download xampp
 2. download visual code
+
+
+강의영상 : http://naver.me/xOxTwV4g
