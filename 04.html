@@ -19,6 +19,9 @@
     </style>
 </head>
 <body>
+    <div class="container-fluid bg-warning">
+        FLUID
+    </div>
     <div class="container">
         <div class="row">
             <div class="col colLine text-center">a</div>
@@ -46,6 +49,49 @@
             <div class="col-4 col-lg-2 colLine bg-danger">b</div>
             <div class="col colLine bg-success">c</div>
         </div>
+        <div class="row">
+            <div class="col-2 colLine">아이디</div>
+            <div class="col colLine">
+                <input type="text" class="form-control" placeholder="아이디 입력">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 colLine">비밀번호</div>
+            <div class="col colLine">
+                <input type="password" class="form-control" placeholder="비번 입력">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 colLine">지역선택택</div>
+            <div class="col colLine">
+                <select class="form-control"">
+                    <option value="">------ 선택하세요 -----</option>
+                    <option value="서울">서울</option>
+                    <option value="경기">경기</option>
+                    <option value="대전" selected>대전</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 colLine">자기소개</div>
+            <div class="col colLine">
+                <textarea class="form-control" rows="10" placeholder="자기소개를 쓰세요"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 colLine">
+                <button type="button" class="btn btn-primary">등록</button>
+            </div>
+            <div class="col-2 colLine">
+                <button type="button" class="btn btn-primary form-control">1</button>
+            </div>
+            <div class="col-2 colLine">
+                <button type="button" class="btn btn-danger btn-sm form-control">1</button>
+            </div>
+            
+        </div>
+
     </div>
 </body>
 </html>
