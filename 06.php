@@ -63,7 +63,7 @@
             <div class="col colLine">
               여기는 HTML입니다.<br>
               <?php 
-                for($i=1; $i<=100; $i++)
+                for($i=1; $i<=100; $i=$i+2)
                 {
                   echo "$i<br>";
                 }
