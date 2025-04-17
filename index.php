@@ -1,6 +1,29 @@
 <?php
+session_start(); // 세션 시작
+
 // cmd 파라미터 처리
 $cmd = isset($_GET['cmd']) ? $_GET['cmd'] : 'init';
+
+// 로그인 처리
+if ($cmd === 'login') {
+  $id = $_POST['id'] ?? '';
+  $pw = $_POST['pw'] ?? '';
+
+  // 단순 로그인 검증 예시 (아이디: admin, 비번: 1234)
+  if ($id === 'admin' && $pw === '1234') {
+    $_SESSION['user'] = '홍길동';
+  }
+
+  header('Location: index.php');
+  exit;
+}
+
+// 로그아웃 처리
+if ($cmd === 'logout') {
+  session_destroy();
+  header('Location: index.php');
+  exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -19,7 +42,7 @@ $cmd = isset($_GET['cmd']) ? $_GET['cmd'] : 'init';
       flex-direction: column;
     }
     main {
-      flex: 1; /* 남은 공간을 모두 main이 차지하게 함 */
+      flex: 1;
     }
   </style>
 </head>
@@ -35,17 +58,14 @@ $cmd = isset($_GET['cmd']) ? $_GET['cmd'] : 'init';
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">홈</a>
-          </li>
 
           <!-- 메뉴1 -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="menu1" role="button" data-bs-toggle="dropdown">
-              메뉴1
+              한문학과
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.php?cmd=menu1-1">메뉴1-1</a></li>
+              <li><a class="dropdown-item" href="index.php?cmd=intro">학과소개</a></li>
               <li><a class="dropdown-item" href="index.php?cmd=menu1-2">메뉴1-2</a></li>
             </ul>
           </li>
@@ -64,6 +84,28 @@ $cmd = isset($_GET['cmd']) ? $_GET['cmd'] : 'init';
       </div>
     </div>
   </nav>
+
+  <!-- 로그인 영역 -->
+  <div class="container my-3">
+    <?php if (!isset($_SESSION['user'])): ?>
+      <form method="post" action="index.php?cmd=login" class="row g-2 align-items-center">
+        <div class="col-auto">
+          <input type="text" name="id" class="form-control" placeholder="아이디" required>
+        </div>
+        <div class="col-auto">
+          <input type="password" name="pw" class="form-control" placeholder="비밀번호" required>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">로그인</button>
+        </div>
+      </form>
+    <?php else: ?>
+      <div class="d-flex justify-content-between align-items-center">
+        <div><strong><?= $_SESSION['user'] ?> 님</strong></div>
+        <a href="index.php?cmd=logout" class="btn btn-outline-danger btn-sm">로그아웃</a>
+      </div>
+    <?php endif; ?>
+  </div>
 
   <!-- 메인 콘텐츠 -->
   <main class="container my-4">
