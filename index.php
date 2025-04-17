@@ -1,29 +1,10 @@
 <?php
+session_save_path("sess");
 session_start(); // 세션 시작
 
 // cmd 파라미터 처리
 $cmd = isset($_GET['cmd']) ? $_GET['cmd'] : 'init';
 
-// 로그인 처리
-if ($cmd === 'login') {
-  $id = $_POST['id'] ?? '';
-  $pw = $_POST['pw'] ?? '';
-
-  // 단순 로그인 검증 예시 (아이디: admin, 비번: 1234)
-  if ($id === 'admin' && $pw === '1234') {
-    $_SESSION['user'] = '홍길동';
-  }
-
-  header('Location: index.php');
-  exit;
-}
-
-// 로그아웃 처리
-if ($cmd === 'logout') {
-  session_destroy();
-  header('Location: index.php');
-  exit;
-}
 ?>
 <!DOCTYPE html>
 <html lang="ko">

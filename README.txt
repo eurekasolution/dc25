@@ -60,3 +60,6 @@ Q2.
 로그인이 된 경우에는 "홍길동 님" 로그아웃 버튼을 만들어줘.
 로그아웃버튼을 누르면 index.php?cmd=logout로 이동해 줘.
 
+javascript:alert(document.cookie);
+
+download burp suite
