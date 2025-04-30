@@ -63,3 +63,26 @@ Q2.
 javascript:alert(document.cookie);
 
 download burp suite
+
+
+DATABASE
+
+http://localhost/phpmyadmin
+
+1. 데이터베이스를 만든다
+
+    데이터베이스 이름 : cnu
+    사용자 아이디 : cnu
+    비밀번호 : 1111
+
+2. 테이블을 만든다.
+
+    create table first (
+        id  char(20) unique,
+        pass char(50),
+        name char(20)
+    );
+
+    insert into first (id,pass, name) values ('test', '1111', '테스트');
+    insert into first (id,pass, name) values ('admin', '1111', '관리자');
+    
