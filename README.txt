@@ -92,3 +92,13 @@ http://localhost/phpmyadmin
         name    char(20),
         pass    char(50)
     );
+
+    insert into users(id, name, pass) 
+        values ('test', '테스트', '1111');
+    insert into users(id, name, pass) 
+        values ('kdhong', '홍길동', '1111');
+
+    insert into users(id, name, pass) 
+        values ('auth', '암호화', password('1111') );
+
+
