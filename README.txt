@@ -86,3 +86,9 @@ http://localhost/phpmyadmin
     insert into first (id,pass, name) values ('test', '1111', '테스트');
     insert into first (id,pass, name) values ('admin', '1111', '관리자');
     
+    create table users (
+        idx     integer auto_increment primary key,
+        id      char(20) unique,
+        name    char(20),
+        pass    char(50)
+    );
