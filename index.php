@@ -2,6 +2,10 @@
 session_save_path("sess");
 session_start(); // 세션 시작
 
+include "db.php";
+
+$conn = connectDB();
+
 // cmd 파라미터 처리
 $cmd = isset($_GET['cmd']) ? $_GET['cmd'] : 'init';
 
