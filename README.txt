@@ -102,3 +102,11 @@ http://localhost/phpmyadmin
         values ('auth', '암호화', password('1111') );
 
 
+PHP로 mysql에 접속하는 코드를 만들고 싶어.
+function connectDB()를 정의하는데, mysqli()함수로 접속을 해.
+db name : cnu
+db user : cnu
+db pass : 1111
+
+성공하면 $conn 를 반환하도록 db.php파일을 만들어 줘
+
