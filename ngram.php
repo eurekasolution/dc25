@@ -22,7 +22,7 @@
         $text = preg_replace('/\s+/u', ' ', $text);
 
         $text = preg_replace("/[a-z0-9_가-힣]/u", "", $text);
-        $words = preg_split("/[。,\s]/u", $text);
+        $words = preg_split("/[。,\s()]/u", $text, -1, PREG_SPLIT_NO_EMPTY);
         echo "text = $text<br>";
 
 
