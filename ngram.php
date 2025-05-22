@@ -1,7 +1,7 @@
 <form method="post" action="index.php?cmd=ngram">
     <div class="row">
         <div class="col-10 colLine">
-            <textarea class="form-control" name="text" rows="10">稼亭先生年譜。abcd1234 한글大德,二年戊戌七月壬寅。公生。</textarea>
+            <textarea class="form-control" name="text" rows="10">충남대학교 인문대학 한문학과 국어국문학과 영문학과</textarea>
         </div>
         <div class="col colLine">
             <button type="submit" class="btn btn-primary">분석</button>
@@ -21,7 +21,8 @@
         $text = str_replace("/", "", $text);
         $text = preg_replace('/\s+/u', ' ', $text);
 
-        $text = preg_replace("/[a-z0-9_가-힣]/u", "", $text);
+        //$text = preg_replace("/[a-z0-9_가-힣]/u", "", $text);
+        $text = preg_replace("/[a-z0-9_]/u", "", $text);
         $words = preg_split("/[。,\s()]/u", $text, -1, PREG_SPLIT_NO_EMPTY);
         echo "text = $text<br>";
 
@@ -30,6 +31,9 @@
         for($i=0; $i<count($words); $i++)
         {
             echo "$i : $words[$i]<br>";
+            $len = strlen($words[$i]);
+            $len2 = mb_strlen($words[$i]);
+            echo "len = $len, len2 = $len2<br>";
         }
 
     }
