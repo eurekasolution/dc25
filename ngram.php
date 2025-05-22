@@ -1,7 +1,16 @@
+<?php
+    if(isset($_POST["text"]))
+    {
+        $text = $_POST["text"];
+    }else
+    {
+        $text = "충남대 충남대학교 인문대 인문대학 한문학과 국어국문학과";
+    }
+?>
 <form method="post" action="index.php?cmd=ngram">
     <div class="row">
         <div class="col-10 colLine">
-            <textarea class="form-control" name="text" rows="10">충남대학교 인문대학 한문학과 국어국문학과 영문학과</textarea>
+            <textarea class="form-control" name="text" rows="10"><?php echo $text; ?></textarea>
         </div>
         <div class="col colLine">
             <button type="submit" class="btn btn-primary">분석</button>
@@ -21,7 +30,7 @@
         $text = str_replace("/", "", $text);
         $text = preg_replace('/\s+/u', ' ', $text);
 
-        $text = preg_replace("/[a-z0-9_가-힣]/u", "", $text);
+        $text = preg_replace("/[a-zA-Z0-9_가-힣]/u", "", $text);
         //$text = preg_replace("/[a-z0-9_]/u", "", $text);
         $words = preg_split("/[。,\s()]/u", $text, -1, PREG_SPLIT_NO_EMPTY);
         //echo "text = $text<br>";
