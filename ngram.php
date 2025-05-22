@@ -37,19 +37,39 @@
 
             for($gram = 1; $gram <= $chars; $gram ++)
             {
-                echo "$gram start<br>";
+                //echo "$gram start<br>";
 
                 for($pos = 0; $pos < $chars; $pos++)
                 {
                     if($pos + $gram <= $chars)
                     {
                         $subText = mb_substr($words[$i], $pos, $gram);
-                        echo "$subText<br>";
+                        //echo "$subText<br>";
+
+                        if(isset($dict[$subText])) // 이미 사전에 있어?
+                        {
+                            $dict[$subText] ++;
+                        }else
+                        {
+                            // 단어가 처음나오면 1회 출현
+                            $dict[$subText] = 1;
+                        }
+
+                        //echo "$subText : $dict[$subText]<br>";
                     }
                     
                 }
             }
 
+        }
+
+        arsort($dict);
+        $count = count($dict);
+        echo "종류 : $count<br>";
+
+        foreach($dict as $key => $value)
+        {
+            echo "$key : $value <br>";
         }
 
     }
