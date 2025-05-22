@@ -21,16 +21,16 @@
         $text = str_replace("/", "", $text);
         $text = preg_replace('/\s+/u', ' ', $text);
 
-        //$text = preg_replace("/[a-z0-9_가-힣]/u", "", $text);
-        $text = preg_replace("/[a-z0-9_]/u", "", $text);
+        $text = preg_replace("/[a-z0-9_가-힣]/u", "", $text);
+        //$text = preg_replace("/[a-z0-9_]/u", "", $text);
         $words = preg_split("/[。,\s()]/u", $text, -1, PREG_SPLIT_NO_EMPTY);
-        echo "text = $text<br>";
+        //echo "text = $text<br>";
 
 
 
         for($i=0; $i<count($words); $i++)
         {
-            echo "$i : $words[$i]<br>";
+            //echo "$i : $words[$i]<br>";
             $len = strlen($words[$i]);
             $chars = mb_strlen($words[$i]);
             // echo "len = $len, len2 = $len2<br>";
