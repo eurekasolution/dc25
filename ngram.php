@@ -41,8 +41,12 @@
 
                 for($pos = 0; $pos < $chars; $pos++)
                 {
-                    $subText = mb_substr($words[$i], $pos, $gram);
-                    echo "$subText<br>";
+                    if($pos + $gram <= $chars)
+                    {
+                        $subText = mb_substr($words[$i], $pos, $gram);
+                        echo "$subText<br>";
+                    }
+                    
                 }
             }
 
