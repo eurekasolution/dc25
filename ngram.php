@@ -32,8 +32,20 @@
         {
             echo "$i : $words[$i]<br>";
             $len = strlen($words[$i]);
-            $len2 = mb_strlen($words[$i]);
-            echo "len = $len, len2 = $len2<br>";
+            $chars = mb_strlen($words[$i]);
+            // echo "len = $len, len2 = $len2<br>";
+
+            for($gram = 1; $gram <= $chars; $gram ++)
+            {
+                echo "$gram start<br>";
+
+                for($pos = 0; $pos < $chars; $pos++)
+                {
+                    $subText = mb_substr($words[$i], $pos, $gram);
+                    echo "$subText<br>";
+                }
+            }
+
         }
 
     }
