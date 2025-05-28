@@ -110,3 +110,198 @@ db pass : 1111
 
 성공하면 $conn 를 반환하도록 db.php파일을 만들어 줘
 
+
+
+========================================================
+
+<?php
+    if(isset($_POST["text"]))
+    {
+        $text = $_POST["text"];
+    }else
+    {
+        $text = "충남대 충남대학교 인문대 인문대학 한문학과 국어국문학과";
+    }
+?>
+<form method="post" action="index.php?cmd=ngram">
+    <div class="row">
+        <div class="col-10 colLine">
+            <textarea class="form-control" name="text" rows="10"><?php echo $text; ?></textarea>
+        </div>
+        <div class="col colLine">
+            <button type="submit" class="btn btn-primary">분석</button>
+        </div>
+    </div>
+</form>
+
+<?php
+    
+
+    if(isset($_POST["text"]) and $_POST["text"])
+    {
+        $text = $_POST["text"];
+        //$words = explode("。", $text);
+        $text = preg_replace("/\n+/u", "\n", $text);
+        
+        $text = str_replace("/", "", $text);
+        $text = preg_replace('/\s+/u', ' ', $text);
+
+        $text = preg_replace("/[a-zA-Z0-9_가-힣]/u", "", $text);
+        //$text = preg_replace("/[a-z0-9_]/u", "", $text);
+        $words = preg_split("/[。,\s()]/u", $text, -1, PREG_SPLIT_NO_EMPTY);
+        //echo "text = $text<br>";
+
+
+
+        for($i=0; $i<count($words); $i++)
+        {
+            //echo "$i : $words[$i]<br>";
+            $len = strlen($words[$i]);
+            $chars = mb_strlen($words[$i]);
+            // echo "len = $len, len2 = $len2<br>";
+
+            for($gram = 1; $gram <= $chars; $gram ++)
+            {
+                //echo "$gram start<br>";
+
+                for($pos = 0; $pos < $chars; $pos++)
+                {
+                    if($pos + $gram <= $chars)
+                    {
+                        $subText = mb_substr($words[$i], $pos, $gram);
+                        //echo "$subText<br>";
+
+                        if(isset($dict[$subText])) // 이미 사전에 있어?
+                        {
+                            $dict[$subText] ++;
+                        }else
+                        {
+                            // 단어가 처음나오면 1회 출현
+                            $dict[$subText] = 1;
+                        }
+
+                        //echo "$subText : $dict[$subText]<br>";
+                    }
+                    
+                }
+            }
+
+        }
+
+        arsort($dict);
+        $count = count($dict);
+        echo "종류 : $count<br>";
+
+        foreach($dict as $key => $value)
+        {
+            echo "$key : $value <br>";
+        }
+
+    }
+?>
+
+textarea에 입력한 문장을 ngram 분석하는 코드를 위와 같이 만들었어.
+이 프로그램을 수정해서 다음과 같이 개선하고 싶어.
+$dict[음절수][출현단어] 형태로 정리하도록 변경하고 싶어.
+그런다음 출력은 표 형태로 하고 싶어.
+표의 열 정보는 다음과 같어.
+순서, 1음절어, 1음절어 빈도, 2음절어, 2음절어 빈도, 3음절어, 3음절어 빈도 와 같이 
+5음절까지만 필요해
+표는 각 음절별로 내림차순으로 정렬하는데, 상위 20개만 있으면 돼.
+
+위 코드를 조건과 같이 수정해 줘.
+
+
+============================================================
+코드를 확인한 후 조금 수정했어. 수정한 코드는 다음과 같아.
+그런데 나는 반복문을 사용할 때, foreach()가 어색해서 
+for()형태로 이 코드 전체를 수정하고 싶어.ㅣ
+이를 반영해서 전체 코드를 다시 만들어 줘.
+
+<?php
+    if (isset($_POST["text"])) {
+        $text = $_POST["text"];
+    } else {
+        $text = "충남대 충남대학교 인문대 인문대학 한문학과 국어국문학과";
+    }
+?>
+<form method="post" action="index.php?cmd=ngram">
+    <div class="row">
+        <div class="col-10 colLine">
+            <textarea class="form-control" name="text" rows="10"><?php echo htmlspecialchars($text); ?></textarea>
+        </div>
+        <div class="col colLine">
+            <button type="submit" class="btn btn-primary">분석</button>
+        </div>
+    </div>
+</form>
+
+<?php
+if (isset($_POST["text"]) && $_POST["text"]) {
+    $text = $_POST["text"];
+    $text = preg_replace("/\n+/u", "\n", $text);
+    $text = str_replace("/", "", $text);
+    $text = preg_replace('/\s+/u', ' ', $text);
+    $text = preg_replace("/[a-zA-Z0-9_]/u", "", $text);
+    $words = preg_split("/[。，.,?\s()]/u", $text, -1, PREG_SPLIT_NO_EMPTY);
+
+    $dict = [];
+
+    foreach ($words as $word) {
+        $chars = mb_strlen($word);
+        for ($gram = 1; $gram <= 5; $gram++) {
+            for ($pos = 0; $pos + $gram <= $chars; $pos++) {
+                $subText = mb_substr($word, $pos, $gram);
+                if (!isset($dict[$gram])) {
+                    $dict[$gram] = [];
+                }
+                if (isset($dict[$gram][$subText])) {
+                    $dict[$gram][$subText]++;
+                } else {
+                    $dict[$gram][$subText] = 1;
+                }
+            }
+        }
+    }
+
+    // 내림차순 정렬 및 상위 20개 자르기
+    for ($i = 1; $i <= 5; $i++) {
+        if (isset($dict[$i])) {
+            arsort($dict[$i]);
+            $dict[$i] = array_slice($dict[$i], 0, 20, true);
+        } else {
+            $dict[$i] = [];
+        }
+    }
+
+    // 최대 20개의 행 기준으로 표 만들기
+    echo "<table class='table table-bordered'>";
+    echo "<thead><tr><th>순서</th>";
+    for ($i = 1; $i <= 5; $i++) {
+        echo "<th>{$i}음절어</th><th>빈도</th>";
+    }
+    echo "</tr></thead><tbody>";
+
+    for ($row = 0; $row < 20; $row++) {
+        echo "<tr><td>" . ($row + 1) . "</td>";
+        for ($i = 1; $i <= 5; $i++) {
+            $keys = array_keys($dict[$i]);
+            $values = array_values($dict[$i]);
+
+            if (isset($keys[$row])) {
+                echo "<td>{$keys[$row]}</td><td>{$values[$row]}</td>";
+            } else {
+                echo "<td></td><td></td>";
+            }
+        }
+        echo "</tr>";
+    }
+
+    echo "</tbody></table>";
+}
+?>
+
+
+==============================================================
+
+http://naver.me/xOxTwV4g
