@@ -366,6 +366,141 @@ https://d3js.org
 관계를 나타내는 LINK는 선으로 연결하도록 HTML 코드를 만들어 줘.
 이때, 마우스를 스크롤하면 확대, 축소가 되면 좋겠고, 
 화면이 고정되지 않고, 마우스를 드래그했을 때, 이동하도록 변경해 줘
+그래프가 그려지는 영역은 전체 화면이면 좋겠어.
 
 결과 : ngram2.html
 확인 : localhost/ngram2.html
+
+
+
+=============================================
+ngram분석하는 프로그램을 다음과 만들었어.
+
+<?php
+    if (isset($_POST["text"])) {
+        $text = $_POST["text"];
+    } else {
+        $text = "충남대 충남대학교 인문대 인문대학 한문학과 국어국문학과";
+    }
+?>
+<form method="post" action="index.php?cmd=ngram">
+    <div class="row">
+        <div class="col-10 colLine">
+            <textarea class="form-control" name="text" rows="10"><?php echo htmlspecialchars($text); ?></textarea>
+        </div>
+        <div class="col colLine">
+            <button type="submit" class="btn btn-primary">분석</button>
+        </div>
+    </div>
+</form>
+
+<?php
+if (isset($_POST["text"]) && $_POST["text"]) {
+    $text = $_POST["text"];
+    $text = preg_replace("/\n+/u", "\n", $text);
+    $text = str_replace("/", "", $text);
+    $text = preg_replace('/\s+/u', ' ', $text);
+    $text = preg_replace("/[a-zA-Z0-9_]/u", "", $text);
+    $words = preg_split("/[。，.,?\s()]/u", $text, -1, PREG_SPLIT_NO_EMPTY);
+
+    $dict = [];
+
+    for ($w = 0; $w < count($words); $w++) {
+        $word = $words[$w];
+        $chars = mb_strlen($word);
+        for ($gram = 1; $gram <= 5; $gram++) {
+            for ($pos = 0; $pos + $gram <= $chars; $pos++) {
+                $subText = mb_substr($word, $pos, $gram);
+                if (!isset($dict[$gram])) {
+                    $dict[$gram] = [];
+                }
+                if (isset($dict[$gram][$subText])) {
+                    $dict[$gram][$subText]++;
+                } else {
+                    $dict[$gram][$subText] = 1;
+                }
+            }
+        }
+    }
+
+    // 내림차순 정렬 및 상위 20개 잘라내기
+    for ($i = 1; $i <= 5; $i++) {
+        if (isset($dict[$i])) {
+            arsort($dict[$i]);
+            $tempKeys = array_keys($dict[$i]);
+            $tempVals = array_values($dict[$i]);
+            $tempDict = [];
+            for ($j = 0; $j < min(20, count($tempKeys)); $j++) {
+                $tempDict[$tempKeys[$j]] = $tempVals[$j];
+            }
+            $dict[$i] = $tempDict;
+        } else {
+            $dict[$i] = [];
+        }
+    }
+
+    // 표 출력
+    echo "<table class='table table-bordered'>";
+    echo "<thead><tr><th>순서</th>";
+    for ($i = 1; $i <= 5; $i++) {
+        echo "<th>{$i}음절어</th><th>빈도</th>";
+    }
+    echo "</tr></thead><tbody>";
+
+    for ($row = 0; $row < 20; $row++) {
+        echo "<tr><td>" . ($row + 1) . "</td>";
+        for ($i = 1; $i <= 5; $i++) {
+            $keys = array_keys($dict[$i]);
+            $values = array_values($dict[$i]);
+            if ($row < count($keys)) {
+                echo "<td>{$keys[$row]}</td><td>{$values[$row]}</td>";
+            } else {
+                echo "<td></td><td></td>";
+            }
+        }
+        echo "</tr>";
+    }
+
+    echo "</tbody></table>";
+}
+?>
+
+
+프로그램의 마지막에 시각화를 위한 ngram.json을 만들고 싶어.
+내가 필요한 최대는 5-gram까지만 필요해.
+
+만약 "대학교"를 분석하면
+대, 학, 교, 대학, 학교, 대학교
+와 같이 분리되는데, 이 각각을 node로 만들고 싶어.
+
+대-대학, 학-학교, 학교-대학교 와 같이 음절이 추가되는 노드를
+link로 연결하고 싶어.
+이는 네트워크 다이그램으로 시각화하기 위한 전처리 과정이야.
+이때, link에는 몇회 출현했는지를 추가하고 싶어.
+
+예를 들어 : 대 10회, 대학 3회 출현인 경우
+    대-대학 은 3회 출현한 것으로 정보를 추가하고 싶어.
+
+또 node에도 출현횟수를 추가학고 싶어.
+
+ngram.json 파일을 만드는 코드를 추가하는데,
+만약 이 파일이 있으면 지우고, 다시 만들어줘.
+
+
+=========================================================
+
+ngram3.php파일을 하나 만들어줘.
+
+ngram.json을 읽어.
+이 파일에는 ngram 분석된 결과가 node와 link정보로 있는데,
+이를 이용해서 d3js의 네트워크 다이어그램으로 시각화하려고 해.
+link의 출현회수는 1~100회 있으면 1~30으로 스케일링 하고 싶어.
+100회를 넘어가면 30으로 스케일링해줘.
+
+node는 출현회수에 따라 1~100 이면 #FFFFFF ~ #FF0000으로 스케일링하고
+범위를 초과하면 #FF0000으로 해줘.
+
+그런데, 노드와 링크에 마우스를 올렸을때, 풍선도움말을 이용해 정보를 보고 싶어.
+배경색은 노란색으로 하고, 텍스트는 검정색으로 출력해 줘.
+노드에 마우스를 올리면, 글자와 출현횟수를 출력하고
+링크에 마우스를 올리면, source, target , 출현횟수를 출력해 줘.

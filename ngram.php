@@ -52,7 +52,7 @@ if (isset($_POST["text"]) && $_POST["text"]) {
             $tempKeys = array_keys($dict[$i]);
             $tempVals = array_values($dict[$i]);
             $tempDict = [];
-            for ($j = 0; $j < min(20, count($tempKeys)); $j++) {
+            for ($j = 0; $j < min(5000, count($tempKeys)); $j++) {
                 $tempDict[$tempKeys[$j]] = $tempVals[$j];
             }
             $dict[$i] = $tempDict;
@@ -69,7 +69,7 @@ if (isset($_POST["text"]) && $_POST["text"]) {
     }
     echo "</tr></thead><tbody>";
 
-    for ($row = 0; $row < 20; $row++) {
+    for ($row = 0; $row < 5000; $row++) {
         echo "<tr><td>" . ($row + 1) . "</td>";
         for ($i = 1; $i <= 5; $i++) {
             $keys = array_keys($dict[$i]);
@@ -84,5 +84,52 @@ if (isset($_POST["text"]) && $_POST["text"]) {
     }
 
     echo "</tbody></table>";
+
+
+    // JSON 파일 생성을 위한 nodes, links 구성
+    $nodes = [];
+    $nodeSet = []; // 중복 방지
+    $links = [];
+    $linkMap = []; // 중복 링크 방지
+
+    for ($n = 1; $n <= 5; $n++) {
+        foreach ($dict[$n] as $ngram => $count) {
+            if (!isset($nodeSet[$ngram])) {
+                $nodes[] = ["id" => $ngram, "count" => $count];
+                $nodeSet[$ngram] = $count;
+            }
+
+            // 이전 n-1 gram과 연결
+            if ($n > 1) {
+                $prefix = mb_substr($ngram, 0, $n - 1);
+                if (isset($dict[$n - 1][$prefix])) {
+                    $value = min($count, $dict[$n - 1][$prefix]);
+                    $linkKey = $prefix . '→' . $ngram;
+                    if (!isset($linkMap[$linkKey])) {
+                        $links[] = [
+                            "source" => $prefix,
+                            "target" => $ngram,
+                            "value" => $value
+                        ];
+                        $linkMap[$linkKey] = true;
+                    }
+                }
+            }
+        }
+    }
+
+    $jsonData = [
+        "nodes" => $nodes,
+        "links" => $links
+    ];
+
+    $jsonFile = "ngram.json";
+    if (file_exists($jsonFile)) {
+        unlink($jsonFile); // 기존 파일 삭제
+    }
+    file_put_contents($jsonFile, json_encode($jsonData, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+
+    echo "<p><strong>ngram.json 파일이 생성되었습니다.</strong></p>";
+
 }
 ?>

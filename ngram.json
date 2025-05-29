@@ -1,0 +1,2353 @@
+{
+    "nodes": [
+        {
+            "id": "年",
+            "count": 150
+        },
+        {
+            "id": "生",
+            "count": 90
+        },
+        {
+            "id": "擧",
+            "count": 90
+        },
+        {
+            "id": "先",
+            "count": 60
+        },
+        {
+            "id": "二",
+            "count": 60
+        },
+        {
+            "id": "七",
+            "count": 60
+        },
+        {
+            "id": "寅",
+            "count": 60
+        },
+        {
+            "id": "延",
+            "count": 60
+        },
+        {
+            "id": "祐",
+            "count": 60
+        },
+        {
+            "id": "中",
+            "count": 60
+        },
+        {
+            "id": "科",
+            "count": 60
+        },
+        {
+            "id": "朴",
+            "count": 60
+        },
+        {
+            "id": "孝",
+            "count": 60
+        },
+        {
+            "id": "修",
+            "count": 60
+        },
+        {
+            "id": "秋",
+            "count": 60
+        },
+        {
+            "id": "知",
+            "count": 60
+        },
+        {
+            "id": "貢",
+            "count": 60
+        },
+        {
+            "id": "稼",
+            "count": 30
+        },
+        {
+            "id": "亭",
+            "count": 30
+        },
+        {
+            "id": "譜",
+            "count": 30
+        },
+        {
+            "id": "大",
+            "count": 30
+        },
+        {
+            "id": "德",
+            "count": 30
+        },
+        {
+            "id": "戊",
+            "count": 30
+        },
+        {
+            "id": "戌",
+            "count": 30
+        },
+        {
+            "id": "月",
+            "count": 30
+        },
+        {
+            "id": "壬",
+            "count": 30
+        },
+        {
+            "id": "公",
+            "count": 30
+        },
+        {
+            "id": "四",
+            "count": 30
+        },
+        {
+            "id": "丁",
+            "count": 30
+        },
+        {
+            "id": "巳",
+            "count": 30
+        },
+        {
+            "id": "子",
+            "count": 30
+        },
+        {
+            "id": "監",
+            "count": 30
+        },
+        {
+            "id": "試",
+            "count": 30
+        },
+        {
+            "id": "庚",
+            "count": 30
+        },
+        {
+            "id": "申",
+            "count": 30
+        },
+        {
+            "id": "秀",
+            "count": 30
+        },
+        {
+            "id": "才",
+            "count": 30
+        },
+        {
+            "id": "第",
+            "count": 30
+        },
+        {
+            "id": "名",
+            "count": 30
+        },
+        {
+            "id": "益",
+            "count": 30
+        },
+        {
+            "id": "齋",
+            "count": 30
+        },
+        {
+            "id": "李",
+            "count": 30
+        },
+        {
+            "id": "齊",
+            "count": 30
+        },
+        {
+            "id": "賢",
+            "count": 30
+        },
+        {
+            "id": "同",
+            "count": 30
+        },
+        {
+            "id": "調",
+            "count": 30
+        },
+        {
+            "id": "福",
+            "count": 30
+        },
+        {
+            "id": "州",
+            "count": 30
+        },
+        {
+            "id": "司",
+            "count": 30
+        },
+        {
+            "id": "錄",
+            "count": 30
+        },
+        {
+            "id": "參",
+            "count": 30
+        },
+        {
+            "id": "軍",
+            "count": 30
+        },
+        {
+            "id": "事",
+            "count": 30
+        },
+        {
+            "id": "泰",
+            "count": 30
+        },
+        {
+            "id": "定",
+            "count": 30
+        },
+        {
+            "id": "三",
+            "count": 30
+        },
+        {
+            "id": "丙",
+            "count": 30
+        },
+        {
+            "id": "ㅍ",
+            "count": 6
+        },
+        {
+            "id": "先生",
+            "count": 60
+        },
+        {
+            "id": "延祐",
+            "count": 60
+        },
+        {
+            "id": "朴孝",
+            "count": 60
+        },
+        {
+            "id": "孝修",
+            "count": 60
+        },
+        {
+            "id": "知貢",
+            "count": 60
+        },
+        {
+            "id": "貢擧",
+            "count": 60
+        },
+        {
+            "id": "稼亭",
+            "count": 30
+        },
+        {
+            "id": "亭先",
+            "count": 30
+        },
+        {
+            "id": "生年",
+            "count": 30
+        },
+        {
+            "id": "年譜",
+            "count": 30
+        },
+        {
+            "id": "大德",
+            "count": 30
+        },
+        {
+            "id": "德二",
+            "count": 30
+        },
+        {
+            "id": "二年",
+            "count": 30
+        },
+        {
+            "id": "年戊",
+            "count": 30
+        },
+        {
+            "id": "戊戌",
+            "count": 30
+        },
+        {
+            "id": "戌七",
+            "count": 30
+        },
+        {
+            "id": "七月",
+            "count": 30
+        },
+        {
+            "id": "月壬",
+            "count": 30
+        },
+        {
+            "id": "壬寅",
+            "count": 30
+        },
+        {
+            "id": "公生",
+            "count": 30
+        },
+        {
+            "id": "祐四",
+            "count": 30
+        },
+        {
+            "id": "四年",
+            "count": 30
+        },
+        {
+            "id": "年丁",
+            "count": 30
+        },
+        {
+            "id": "丁巳",
+            "count": 30
+        },
+        {
+            "id": "巳中",
+            "count": 30
+        },
+        {
+            "id": "中擧",
+            "count": 30
+        },
+        {
+            "id": "擧子",
+            "count": 30
+        },
+        {
+            "id": "子科",
+            "count": 30
+        },
+        {
+            "id": "科朴",
+            "count": 30
+        },
+        {
+            "id": "修監",
+            "count": 30
+        },
+        {
+            "id": "監試",
+            "count": 30
+        },
+        {
+            "id": "試延",
+            "count": 30
+        },
+        {
+            "id": "祐七",
+            "count": 30
+        },
+        {
+            "id": "七年",
+            "count": 30
+        },
+        {
+            "id": "年庚",
+            "count": 30
+        },
+        {
+            "id": "庚申",
+            "count": 30
+        },
+        {
+            "id": "申秋",
+            "count": 30
+        },
+        {
+            "id": "中秀",
+            "count": 30
+        },
+        {
+            "id": "秀才",
+            "count": 30
+        },
+        {
+            "id": "才科",
+            "count": 30
+        },
+        {
+            "id": "科第",
+            "count": 30
+        },
+        {
+            "id": "第二",
+            "count": 30
+        },
+        {
+            "id": "二名",
+            "count": 30
+        },
+        {
+            "id": "益齋",
+            "count": 30
+        },
+        {
+            "id": "齋先",
+            "count": 30
+        },
+        {
+            "id": "生李",
+            "count": 30
+        },
+        {
+            "id": "李齊",
+            "count": 30
+        },
+        {
+            "id": "齊賢",
+            "count": 30
+        },
+        {
+            "id": "賢知",
+            "count": 30
+        },
+        {
+            "id": "修同",
+            "count": 30
+        },
+        {
+            "id": "同知",
+            "count": 30
+        },
+        {
+            "id": "調福",
+            "count": 30
+        },
+        {
+            "id": "福州",
+            "count": 30
+        },
+        {
+            "id": "州司",
+            "count": 30
+        },
+        {
+            "id": "司錄",
+            "count": 30
+        },
+        {
+            "id": "錄參",
+            "count": 30
+        },
+        {
+            "id": "參軍",
+            "count": 30
+        },
+        {
+            "id": "軍事",
+            "count": 30
+        },
+        {
+            "id": "泰定",
+            "count": 30
+        },
+        {
+            "id": "定三",
+            "count": 30
+        },
+        {
+            "id": "三年",
+            "count": 30
+        },
+        {
+            "id": "年丙",
+            "count": 30
+        },
+        {
+            "id": "丙寅",
+            "count": 30
+        },
+        {
+            "id": "寅秋",
+            "count": 30
+        },
+        {
+            "id": "秋稼",
+            "count": 5
+        },
+        {
+            "id": "秋ㅍ",
+            "count": 2
+        },
+        {
+            "id": "朴孝修",
+            "count": 60
+        },
+        {
+            "id": "知貢擧",
+            "count": 60
+        },
+        {
+            "id": "稼亭先",
+            "count": 30
+        },
+        {
+            "id": "亭先生",
+            "count": 30
+        },
+        {
+            "id": "先生年",
+            "count": 30
+        },
+        {
+            "id": "生年譜",
+            "count": 30
+        },
+        {
+            "id": "大德二",
+            "count": 30
+        },
+        {
+            "id": "德二年",
+            "count": 30
+        },
+        {
+            "id": "二年戊",
+            "count": 30
+        },
+        {
+            "id": "年戊戌",
+            "count": 30
+        },
+        {
+            "id": "戊戌七",
+            "count": 30
+        },
+        {
+            "id": "戌七月",
+            "count": 30
+        },
+        {
+            "id": "七月壬",
+            "count": 30
+        },
+        {
+            "id": "月壬寅",
+            "count": 30
+        },
+        {
+            "id": "延祐四",
+            "count": 30
+        },
+        {
+            "id": "祐四年",
+            "count": 30
+        },
+        {
+            "id": "四年丁",
+            "count": 30
+        },
+        {
+            "id": "年丁巳",
+            "count": 30
+        },
+        {
+            "id": "丁巳中",
+            "count": 30
+        },
+        {
+            "id": "巳中擧",
+            "count": 30
+        },
+        {
+            "id": "中擧子",
+            "count": 30
+        },
+        {
+            "id": "擧子科",
+            "count": 30
+        },
+        {
+            "id": "子科朴",
+            "count": 30
+        },
+        {
+            "id": "科朴孝",
+            "count": 30
+        },
+        {
+            "id": "孝修監",
+            "count": 30
+        },
+        {
+            "id": "修監試",
+            "count": 30
+        },
+        {
+            "id": "監試延",
+            "count": 30
+        },
+        {
+            "id": "試延祐",
+            "count": 30
+        },
+        {
+            "id": "延祐七",
+            "count": 30
+        },
+        {
+            "id": "祐七年",
+            "count": 30
+        },
+        {
+            "id": "七年庚",
+            "count": 30
+        },
+        {
+            "id": "年庚申",
+            "count": 30
+        },
+        {
+            "id": "庚申秋",
+            "count": 30
+        },
+        {
+            "id": "中秀才",
+            "count": 30
+        },
+        {
+            "id": "秀才科",
+            "count": 30
+        },
+        {
+            "id": "才科第",
+            "count": 30
+        },
+        {
+            "id": "科第二",
+            "count": 30
+        },
+        {
+            "id": "第二名",
+            "count": 30
+        },
+        {
+            "id": "益齋先",
+            "count": 30
+        },
+        {
+            "id": "齋先生",
+            "count": 30
+        },
+        {
+            "id": "先生李",
+            "count": 30
+        },
+        {
+            "id": "生李齊",
+            "count": 30
+        },
+        {
+            "id": "李齊賢",
+            "count": 30
+        },
+        {
+            "id": "齊賢知",
+            "count": 30
+        },
+        {
+            "id": "賢知貢",
+            "count": 30
+        },
+        {
+            "id": "孝修同",
+            "count": 30
+        },
+        {
+            "id": "修同知",
+            "count": 30
+        },
+        {
+            "id": "同知貢",
+            "count": 30
+        },
+        {
+            "id": "調福州",
+            "count": 30
+        },
+        {
+            "id": "福州司",
+            "count": 30
+        },
+        {
+            "id": "州司錄",
+            "count": 30
+        },
+        {
+            "id": "司錄參",
+            "count": 30
+        },
+        {
+            "id": "錄參軍",
+            "count": 30
+        },
+        {
+            "id": "參軍事",
+            "count": 30
+        },
+        {
+            "id": "泰定三",
+            "count": 30
+        },
+        {
+            "id": "定三年",
+            "count": 30
+        },
+        {
+            "id": "三年丙",
+            "count": 30
+        },
+        {
+            "id": "年丙寅",
+            "count": 30
+        },
+        {
+            "id": "丙寅秋",
+            "count": 30
+        },
+        {
+            "id": "寅秋稼",
+            "count": 5
+        },
+        {
+            "id": "秋稼亭",
+            "count": 5
+        },
+        {
+            "id": "寅秋ㅍ",
+            "count": 2
+        },
+        {
+            "id": "稼亭先生",
+            "count": 30
+        },
+        {
+            "id": "亭先生年",
+            "count": 30
+        },
+        {
+            "id": "先生年譜",
+            "count": 30
+        },
+        {
+            "id": "大德二年",
+            "count": 30
+        },
+        {
+            "id": "德二年戊",
+            "count": 30
+        },
+        {
+            "id": "二年戊戌",
+            "count": 30
+        },
+        {
+            "id": "年戊戌七",
+            "count": 30
+        },
+        {
+            "id": "戊戌七月",
+            "count": 30
+        },
+        {
+            "id": "戌七月壬",
+            "count": 30
+        },
+        {
+            "id": "七月壬寅",
+            "count": 30
+        },
+        {
+            "id": "延祐四年",
+            "count": 30
+        },
+        {
+            "id": "祐四年丁",
+            "count": 30
+        },
+        {
+            "id": "四年丁巳",
+            "count": 30
+        },
+        {
+            "id": "年丁巳中",
+            "count": 30
+        },
+        {
+            "id": "丁巳中擧",
+            "count": 30
+        },
+        {
+            "id": "巳中擧子",
+            "count": 30
+        },
+        {
+            "id": "中擧子科",
+            "count": 30
+        },
+        {
+            "id": "擧子科朴",
+            "count": 30
+        },
+        {
+            "id": "子科朴孝",
+            "count": 30
+        },
+        {
+            "id": "科朴孝修",
+            "count": 30
+        },
+        {
+            "id": "朴孝修監",
+            "count": 30
+        },
+        {
+            "id": "孝修監試",
+            "count": 30
+        },
+        {
+            "id": "修監試延",
+            "count": 30
+        },
+        {
+            "id": "監試延祐",
+            "count": 30
+        },
+        {
+            "id": "試延祐七",
+            "count": 30
+        },
+        {
+            "id": "延祐七年",
+            "count": 30
+        },
+        {
+            "id": "祐七年庚",
+            "count": 30
+        },
+        {
+            "id": "七年庚申",
+            "count": 30
+        },
+        {
+            "id": "年庚申秋",
+            "count": 30
+        },
+        {
+            "id": "中秀才科",
+            "count": 30
+        },
+        {
+            "id": "秀才科第",
+            "count": 30
+        },
+        {
+            "id": "才科第二",
+            "count": 30
+        },
+        {
+            "id": "科第二名",
+            "count": 30
+        },
+        {
+            "id": "益齋先生",
+            "count": 30
+        },
+        {
+            "id": "齋先生李",
+            "count": 30
+        },
+        {
+            "id": "先生李齊",
+            "count": 30
+        },
+        {
+            "id": "生李齊賢",
+            "count": 30
+        },
+        {
+            "id": "李齊賢知",
+            "count": 30
+        },
+        {
+            "id": "齊賢知貢",
+            "count": 30
+        },
+        {
+            "id": "賢知貢擧",
+            "count": 30
+        },
+        {
+            "id": "朴孝修同",
+            "count": 30
+        },
+        {
+            "id": "孝修同知",
+            "count": 30
+        },
+        {
+            "id": "修同知貢",
+            "count": 30
+        },
+        {
+            "id": "同知貢擧",
+            "count": 30
+        },
+        {
+            "id": "調福州司",
+            "count": 30
+        },
+        {
+            "id": "福州司錄",
+            "count": 30
+        },
+        {
+            "id": "州司錄參",
+            "count": 30
+        },
+        {
+            "id": "司錄參軍",
+            "count": 30
+        },
+        {
+            "id": "錄參軍事",
+            "count": 30
+        },
+        {
+            "id": "泰定三年",
+            "count": 30
+        },
+        {
+            "id": "定三年丙",
+            "count": 30
+        },
+        {
+            "id": "三年丙寅",
+            "count": 30
+        },
+        {
+            "id": "年丙寅秋",
+            "count": 30
+        },
+        {
+            "id": "丙寅秋稼",
+            "count": 5
+        },
+        {
+            "id": "寅秋稼亭",
+            "count": 5
+        },
+        {
+            "id": "秋稼亭先",
+            "count": 5
+        },
+        {
+            "id": "丙寅秋ㅍ",
+            "count": 2
+        },
+        {
+            "id": "稼亭先生年",
+            "count": 30
+        },
+        {
+            "id": "亭先生年譜",
+            "count": 30
+        },
+        {
+            "id": "大德二年戊",
+            "count": 30
+        },
+        {
+            "id": "德二年戊戌",
+            "count": 30
+        },
+        {
+            "id": "二年戊戌七",
+            "count": 30
+        },
+        {
+            "id": "年戊戌七月",
+            "count": 30
+        },
+        {
+            "id": "戊戌七月壬",
+            "count": 30
+        },
+        {
+            "id": "戌七月壬寅",
+            "count": 30
+        },
+        {
+            "id": "延祐四年丁",
+            "count": 30
+        },
+        {
+            "id": "祐四年丁巳",
+            "count": 30
+        },
+        {
+            "id": "四年丁巳中",
+            "count": 30
+        },
+        {
+            "id": "年丁巳中擧",
+            "count": 30
+        },
+        {
+            "id": "丁巳中擧子",
+            "count": 30
+        },
+        {
+            "id": "巳中擧子科",
+            "count": 30
+        },
+        {
+            "id": "中擧子科朴",
+            "count": 30
+        },
+        {
+            "id": "擧子科朴孝",
+            "count": 30
+        },
+        {
+            "id": "子科朴孝修",
+            "count": 30
+        },
+        {
+            "id": "科朴孝修監",
+            "count": 30
+        },
+        {
+            "id": "朴孝修監試",
+            "count": 30
+        },
+        {
+            "id": "孝修監試延",
+            "count": 30
+        },
+        {
+            "id": "修監試延祐",
+            "count": 30
+        },
+        {
+            "id": "監試延祐七",
+            "count": 30
+        },
+        {
+            "id": "試延祐七年",
+            "count": 30
+        },
+        {
+            "id": "延祐七年庚",
+            "count": 30
+        },
+        {
+            "id": "祐七年庚申",
+            "count": 30
+        },
+        {
+            "id": "七年庚申秋",
+            "count": 30
+        },
+        {
+            "id": "中秀才科第",
+            "count": 30
+        },
+        {
+            "id": "秀才科第二",
+            "count": 30
+        },
+        {
+            "id": "才科第二名",
+            "count": 30
+        },
+        {
+            "id": "益齋先生李",
+            "count": 30
+        },
+        {
+            "id": "齋先生李齊",
+            "count": 30
+        },
+        {
+            "id": "先生李齊賢",
+            "count": 30
+        },
+        {
+            "id": "生李齊賢知",
+            "count": 30
+        },
+        {
+            "id": "李齊賢知貢",
+            "count": 30
+        },
+        {
+            "id": "齊賢知貢擧",
+            "count": 30
+        },
+        {
+            "id": "朴孝修同知",
+            "count": 30
+        },
+        {
+            "id": "孝修同知貢",
+            "count": 30
+        },
+        {
+            "id": "修同知貢擧",
+            "count": 30
+        },
+        {
+            "id": "調福州司錄",
+            "count": 30
+        },
+        {
+            "id": "福州司錄參",
+            "count": 30
+        },
+        {
+            "id": "州司錄參軍",
+            "count": 30
+        },
+        {
+            "id": "司錄參軍事",
+            "count": 30
+        },
+        {
+            "id": "泰定三年丙",
+            "count": 30
+        },
+        {
+            "id": "定三年丙寅",
+            "count": 30
+        },
+        {
+            "id": "三年丙寅秋",
+            "count": 30
+        },
+        {
+            "id": "年丙寅秋稼",
+            "count": 5
+        },
+        {
+            "id": "丙寅秋稼亭",
+            "count": 5
+        },
+        {
+            "id": "寅秋稼亭先",
+            "count": 5
+        },
+        {
+            "id": "秋稼亭先生",
+            "count": 5
+        },
+        {
+            "id": "年丙寅秋ㅍ",
+            "count": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "先",
+            "target": "先生",
+            "value": 60
+        },
+        {
+            "source": "延",
+            "target": "延祐",
+            "value": 60
+        },
+        {
+            "source": "朴",
+            "target": "朴孝",
+            "value": 60
+        },
+        {
+            "source": "孝",
+            "target": "孝修",
+            "value": 60
+        },
+        {
+            "source": "知",
+            "target": "知貢",
+            "value": 60
+        },
+        {
+            "source": "貢",
+            "target": "貢擧",
+            "value": 60
+        },
+        {
+            "source": "稼",
+            "target": "稼亭",
+            "value": 30
+        },
+        {
+            "source": "亭",
+            "target": "亭先",
+            "value": 30
+        },
+        {
+            "source": "生",
+            "target": "生年",
+            "value": 30
+        },
+        {
+            "source": "年",
+            "target": "年譜",
+            "value": 30
+        },
+        {
+            "source": "大",
+            "target": "大德",
+            "value": 30
+        },
+        {
+            "source": "德",
+            "target": "德二",
+            "value": 30
+        },
+        {
+            "source": "二",
+            "target": "二年",
+            "value": 30
+        },
+        {
+            "source": "年",
+            "target": "年戊",
+            "value": 30
+        },
+        {
+            "source": "戊",
+            "target": "戊戌",
+            "value": 30
+        },
+        {
+            "source": "戌",
+            "target": "戌七",
+            "value": 30
+        },
+        {
+            "source": "七",
+            "target": "七月",
+            "value": 30
+        },
+        {
+            "source": "月",
+            "target": "月壬",
+            "value": 30
+        },
+        {
+            "source": "壬",
+            "target": "壬寅",
+            "value": 30
+        },
+        {
+            "source": "公",
+            "target": "公生",
+            "value": 30
+        },
+        {
+            "source": "祐",
+            "target": "祐四",
+            "value": 30
+        },
+        {
+            "source": "四",
+            "target": "四年",
+            "value": 30
+        },
+        {
+            "source": "年",
+            "target": "年丁",
+            "value": 30
+        },
+        {
+            "source": "丁",
+            "target": "丁巳",
+            "value": 30
+        },
+        {
+            "source": "巳",
+            "target": "巳中",
+            "value": 30
+        },
+        {
+            "source": "中",
+            "target": "中擧",
+            "value": 30
+        },
+        {
+            "source": "擧",
+            "target": "擧子",
+            "value": 30
+        },
+        {
+            "source": "子",
+            "target": "子科",
+            "value": 30
+        },
+        {
+            "source": "科",
+            "target": "科朴",
+            "value": 30
+        },
+        {
+            "source": "修",
+            "target": "修監",
+            "value": 30
+        },
+        {
+            "source": "監",
+            "target": "監試",
+            "value": 30
+        },
+        {
+            "source": "試",
+            "target": "試延",
+            "value": 30
+        },
+        {
+            "source": "祐",
+            "target": "祐七",
+            "value": 30
+        },
+        {
+            "source": "七",
+            "target": "七年",
+            "value": 30
+        },
+        {
+            "source": "年",
+            "target": "年庚",
+            "value": 30
+        },
+        {
+            "source": "庚",
+            "target": "庚申",
+            "value": 30
+        },
+        {
+            "source": "申",
+            "target": "申秋",
+            "value": 30
+        },
+        {
+            "source": "中",
+            "target": "中秀",
+            "value": 30
+        },
+        {
+            "source": "秀",
+            "target": "秀才",
+            "value": 30
+        },
+        {
+            "source": "才",
+            "target": "才科",
+            "value": 30
+        },
+        {
+            "source": "科",
+            "target": "科第",
+            "value": 30
+        },
+        {
+            "source": "第",
+            "target": "第二",
+            "value": 30
+        },
+        {
+            "source": "二",
+            "target": "二名",
+            "value": 30
+        },
+        {
+            "source": "益",
+            "target": "益齋",
+            "value": 30
+        },
+        {
+            "source": "齋",
+            "target": "齋先",
+            "value": 30
+        },
+        {
+            "source": "生",
+            "target": "生李",
+            "value": 30
+        },
+        {
+            "source": "李",
+            "target": "李齊",
+            "value": 30
+        },
+        {
+            "source": "齊",
+            "target": "齊賢",
+            "value": 30
+        },
+        {
+            "source": "賢",
+            "target": "賢知",
+            "value": 30
+        },
+        {
+            "source": "修",
+            "target": "修同",
+            "value": 30
+        },
+        {
+            "source": "同",
+            "target": "同知",
+            "value": 30
+        },
+        {
+            "source": "調",
+            "target": "調福",
+            "value": 30
+        },
+        {
+            "source": "福",
+            "target": "福州",
+            "value": 30
+        },
+        {
+            "source": "州",
+            "target": "州司",
+            "value": 30
+        },
+        {
+            "source": "司",
+            "target": "司錄",
+            "value": 30
+        },
+        {
+            "source": "錄",
+            "target": "錄參",
+            "value": 30
+        },
+        {
+            "source": "參",
+            "target": "參軍",
+            "value": 30
+        },
+        {
+            "source": "軍",
+            "target": "軍事",
+            "value": 30
+        },
+        {
+            "source": "泰",
+            "target": "泰定",
+            "value": 30
+        },
+        {
+            "source": "定",
+            "target": "定三",
+            "value": 30
+        },
+        {
+            "source": "三",
+            "target": "三年",
+            "value": 30
+        },
+        {
+            "source": "年",
+            "target": "年丙",
+            "value": 30
+        },
+        {
+            "source": "丙",
+            "target": "丙寅",
+            "value": 30
+        },
+        {
+            "source": "寅",
+            "target": "寅秋",
+            "value": 30
+        },
+        {
+            "source": "秋",
+            "target": "秋稼",
+            "value": 5
+        },
+        {
+            "source": "秋",
+            "target": "秋ㅍ",
+            "value": 2
+        },
+        {
+            "source": "朴孝",
+            "target": "朴孝修",
+            "value": 60
+        },
+        {
+            "source": "知貢",
+            "target": "知貢擧",
+            "value": 60
+        },
+        {
+            "source": "稼亭",
+            "target": "稼亭先",
+            "value": 30
+        },
+        {
+            "source": "亭先",
+            "target": "亭先生",
+            "value": 30
+        },
+        {
+            "source": "先生",
+            "target": "先生年",
+            "value": 30
+        },
+        {
+            "source": "生年",
+            "target": "生年譜",
+            "value": 30
+        },
+        {
+            "source": "大德",
+            "target": "大德二",
+            "value": 30
+        },
+        {
+            "source": "德二",
+            "target": "德二年",
+            "value": 30
+        },
+        {
+            "source": "二年",
+            "target": "二年戊",
+            "value": 30
+        },
+        {
+            "source": "年戊",
+            "target": "年戊戌",
+            "value": 30
+        },
+        {
+            "source": "戊戌",
+            "target": "戊戌七",
+            "value": 30
+        },
+        {
+            "source": "戌七",
+            "target": "戌七月",
+            "value": 30
+        },
+        {
+            "source": "七月",
+            "target": "七月壬",
+            "value": 30
+        },
+        {
+            "source": "月壬",
+            "target": "月壬寅",
+            "value": 30
+        },
+        {
+            "source": "延祐",
+            "target": "延祐四",
+            "value": 30
+        },
+        {
+            "source": "祐四",
+            "target": "祐四年",
+            "value": 30
+        },
+        {
+            "source": "四年",
+            "target": "四年丁",
+            "value": 30
+        },
+        {
+            "source": "年丁",
+            "target": "年丁巳",
+            "value": 30
+        },
+        {
+            "source": "丁巳",
+            "target": "丁巳中",
+            "value": 30
+        },
+        {
+            "source": "巳中",
+            "target": "巳中擧",
+            "value": 30
+        },
+        {
+            "source": "中擧",
+            "target": "中擧子",
+            "value": 30
+        },
+        {
+            "source": "擧子",
+            "target": "擧子科",
+            "value": 30
+        },
+        {
+            "source": "子科",
+            "target": "子科朴",
+            "value": 30
+        },
+        {
+            "source": "科朴",
+            "target": "科朴孝",
+            "value": 30
+        },
+        {
+            "source": "孝修",
+            "target": "孝修監",
+            "value": 30
+        },
+        {
+            "source": "修監",
+            "target": "修監試",
+            "value": 30
+        },
+        {
+            "source": "監試",
+            "target": "監試延",
+            "value": 30
+        },
+        {
+            "source": "試延",
+            "target": "試延祐",
+            "value": 30
+        },
+        {
+            "source": "延祐",
+            "target": "延祐七",
+            "value": 30
+        },
+        {
+            "source": "祐七",
+            "target": "祐七年",
+            "value": 30
+        },
+        {
+            "source": "七年",
+            "target": "七年庚",
+            "value": 30
+        },
+        {
+            "source": "年庚",
+            "target": "年庚申",
+            "value": 30
+        },
+        {
+            "source": "庚申",
+            "target": "庚申秋",
+            "value": 30
+        },
+        {
+            "source": "中秀",
+            "target": "中秀才",
+            "value": 30
+        },
+        {
+            "source": "秀才",
+            "target": "秀才科",
+            "value": 30
+        },
+        {
+            "source": "才科",
+            "target": "才科第",
+            "value": 30
+        },
+        {
+            "source": "科第",
+            "target": "科第二",
+            "value": 30
+        },
+        {
+            "source": "第二",
+            "target": "第二名",
+            "value": 30
+        },
+        {
+            "source": "益齋",
+            "target": "益齋先",
+            "value": 30
+        },
+        {
+            "source": "齋先",
+            "target": "齋先生",
+            "value": 30
+        },
+        {
+            "source": "先生",
+            "target": "先生李",
+            "value": 30
+        },
+        {
+            "source": "生李",
+            "target": "生李齊",
+            "value": 30
+        },
+        {
+            "source": "李齊",
+            "target": "李齊賢",
+            "value": 30
+        },
+        {
+            "source": "齊賢",
+            "target": "齊賢知",
+            "value": 30
+        },
+        {
+            "source": "賢知",
+            "target": "賢知貢",
+            "value": 30
+        },
+        {
+            "source": "孝修",
+            "target": "孝修同",
+            "value": 30
+        },
+        {
+            "source": "修同",
+            "target": "修同知",
+            "value": 30
+        },
+        {
+            "source": "同知",
+            "target": "同知貢",
+            "value": 30
+        },
+        {
+            "source": "調福",
+            "target": "調福州",
+            "value": 30
+        },
+        {
+            "source": "福州",
+            "target": "福州司",
+            "value": 30
+        },
+        {
+            "source": "州司",
+            "target": "州司錄",
+            "value": 30
+        },
+        {
+            "source": "司錄",
+            "target": "司錄參",
+            "value": 30
+        },
+        {
+            "source": "錄參",
+            "target": "錄參軍",
+            "value": 30
+        },
+        {
+            "source": "參軍",
+            "target": "參軍事",
+            "value": 30
+        },
+        {
+            "source": "泰定",
+            "target": "泰定三",
+            "value": 30
+        },
+        {
+            "source": "定三",
+            "target": "定三年",
+            "value": 30
+        },
+        {
+            "source": "三年",
+            "target": "三年丙",
+            "value": 30
+        },
+        {
+            "source": "年丙",
+            "target": "年丙寅",
+            "value": 30
+        },
+        {
+            "source": "丙寅",
+            "target": "丙寅秋",
+            "value": 30
+        },
+        {
+            "source": "寅秋",
+            "target": "寅秋稼",
+            "value": 5
+        },
+        {
+            "source": "秋稼",
+            "target": "秋稼亭",
+            "value": 5
+        },
+        {
+            "source": "寅秋",
+            "target": "寅秋ㅍ",
+            "value": 2
+        },
+        {
+            "source": "稼亭先",
+            "target": "稼亭先生",
+            "value": 30
+        },
+        {
+            "source": "亭先生",
+            "target": "亭先生年",
+            "value": 30
+        },
+        {
+            "source": "先生年",
+            "target": "先生年譜",
+            "value": 30
+        },
+        {
+            "source": "大德二",
+            "target": "大德二年",
+            "value": 30
+        },
+        {
+            "source": "德二年",
+            "target": "德二年戊",
+            "value": 30
+        },
+        {
+            "source": "二年戊",
+            "target": "二年戊戌",
+            "value": 30
+        },
+        {
+            "source": "年戊戌",
+            "target": "年戊戌七",
+            "value": 30
+        },
+        {
+            "source": "戊戌七",
+            "target": "戊戌七月",
+            "value": 30
+        },
+        {
+            "source": "戌七月",
+            "target": "戌七月壬",
+            "value": 30
+        },
+        {
+            "source": "七月壬",
+            "target": "七月壬寅",
+            "value": 30
+        },
+        {
+            "source": "延祐四",
+            "target": "延祐四年",
+            "value": 30
+        },
+        {
+            "source": "祐四年",
+            "target": "祐四年丁",
+            "value": 30
+        },
+        {
+            "source": "四年丁",
+            "target": "四年丁巳",
+            "value": 30
+        },
+        {
+            "source": "年丁巳",
+            "target": "年丁巳中",
+            "value": 30
+        },
+        {
+            "source": "丁巳中",
+            "target": "丁巳中擧",
+            "value": 30
+        },
+        {
+            "source": "巳中擧",
+            "target": "巳中擧子",
+            "value": 30
+        },
+        {
+            "source": "中擧子",
+            "target": "中擧子科",
+            "value": 30
+        },
+        {
+            "source": "擧子科",
+            "target": "擧子科朴",
+            "value": 30
+        },
+        {
+            "source": "子科朴",
+            "target": "子科朴孝",
+            "value": 30
+        },
+        {
+            "source": "科朴孝",
+            "target": "科朴孝修",
+            "value": 30
+        },
+        {
+            "source": "朴孝修",
+            "target": "朴孝修監",
+            "value": 30
+        },
+        {
+            "source": "孝修監",
+            "target": "孝修監試",
+            "value": 30
+        },
+        {
+            "source": "修監試",
+            "target": "修監試延",
+            "value": 30
+        },
+        {
+            "source": "監試延",
+            "target": "監試延祐",
+            "value": 30
+        },
+        {
+            "source": "試延祐",
+            "target": "試延祐七",
+            "value": 30
+        },
+        {
+            "source": "延祐七",
+            "target": "延祐七年",
+            "value": 30
+        },
+        {
+            "source": "祐七年",
+            "target": "祐七年庚",
+            "value": 30
+        },
+        {
+            "source": "七年庚",
+            "target": "七年庚申",
+            "value": 30
+        },
+        {
+            "source": "年庚申",
+            "target": "年庚申秋",
+            "value": 30
+        },
+        {
+            "source": "中秀才",
+            "target": "中秀才科",
+            "value": 30
+        },
+        {
+            "source": "秀才科",
+            "target": "秀才科第",
+            "value": 30
+        },
+        {
+            "source": "才科第",
+            "target": "才科第二",
+            "value": 30
+        },
+        {
+            "source": "科第二",
+            "target": "科第二名",
+            "value": 30
+        },
+        {
+            "source": "益齋先",
+            "target": "益齋先生",
+            "value": 30
+        },
+        {
+            "source": "齋先生",
+            "target": "齋先生李",
+            "value": 30
+        },
+        {
+            "source": "先生李",
+            "target": "先生李齊",
+            "value": 30
+        },
+        {
+            "source": "生李齊",
+            "target": "生李齊賢",
+            "value": 30
+        },
+        {
+            "source": "李齊賢",
+            "target": "李齊賢知",
+            "value": 30
+        },
+        {
+            "source": "齊賢知",
+            "target": "齊賢知貢",
+            "value": 30
+        },
+        {
+            "source": "賢知貢",
+            "target": "賢知貢擧",
+            "value": 30
+        },
+        {
+            "source": "朴孝修",
+            "target": "朴孝修同",
+            "value": 30
+        },
+        {
+            "source": "孝修同",
+            "target": "孝修同知",
+            "value": 30
+        },
+        {
+            "source": "修同知",
+            "target": "修同知貢",
+            "value": 30
+        },
+        {
+            "source": "同知貢",
+            "target": "同知貢擧",
+            "value": 30
+        },
+        {
+            "source": "調福州",
+            "target": "調福州司",
+            "value": 30
+        },
+        {
+            "source": "福州司",
+            "target": "福州司錄",
+            "value": 30
+        },
+        {
+            "source": "州司錄",
+            "target": "州司錄參",
+            "value": 30
+        },
+        {
+            "source": "司錄參",
+            "target": "司錄參軍",
+            "value": 30
+        },
+        {
+            "source": "錄參軍",
+            "target": "錄參軍事",
+            "value": 30
+        },
+        {
+            "source": "泰定三",
+            "target": "泰定三年",
+            "value": 30
+        },
+        {
+            "source": "定三年",
+            "target": "定三年丙",
+            "value": 30
+        },
+        {
+            "source": "三年丙",
+            "target": "三年丙寅",
+            "value": 30
+        },
+        {
+            "source": "年丙寅",
+            "target": "年丙寅秋",
+            "value": 30
+        },
+        {
+            "source": "丙寅秋",
+            "target": "丙寅秋稼",
+            "value": 5
+        },
+        {
+            "source": "寅秋稼",
+            "target": "寅秋稼亭",
+            "value": 5
+        },
+        {
+            "source": "秋稼亭",
+            "target": "秋稼亭先",
+            "value": 5
+        },
+        {
+            "source": "丙寅秋",
+            "target": "丙寅秋ㅍ",
+            "value": 2
+        },
+        {
+            "source": "稼亭先生",
+            "target": "稼亭先生年",
+            "value": 30
+        },
+        {
+            "source": "亭先生年",
+            "target": "亭先生年譜",
+            "value": 30
+        },
+        {
+            "source": "大德二年",
+            "target": "大德二年戊",
+            "value": 30
+        },
+        {
+            "source": "德二年戊",
+            "target": "德二年戊戌",
+            "value": 30
+        },
+        {
+            "source": "二年戊戌",
+            "target": "二年戊戌七",
+            "value": 30
+        },
+        {
+            "source": "年戊戌七",
+            "target": "年戊戌七月",
+            "value": 30
+        },
+        {
+            "source": "戊戌七月",
+            "target": "戊戌七月壬",
+            "value": 30
+        },
+        {
+            "source": "戌七月壬",
+            "target": "戌七月壬寅",
+            "value": 30
+        },
+        {
+            "source": "延祐四年",
+            "target": "延祐四年丁",
+            "value": 30
+        },
+        {
+            "source": "祐四年丁",
+            "target": "祐四年丁巳",
+            "value": 30
+        },
+        {
+            "source": "四年丁巳",
+            "target": "四年丁巳中",
+            "value": 30
+        },
+        {
+            "source": "年丁巳中",
+            "target": "年丁巳中擧",
+            "value": 30
+        },
+        {
+            "source": "丁巳中擧",
+            "target": "丁巳中擧子",
+            "value": 30
+        },
+        {
+            "source": "巳中擧子",
+            "target": "巳中擧子科",
+            "value": 30
+        },
+        {
+            "source": "中擧子科",
+            "target": "中擧子科朴",
+            "value": 30
+        },
+        {
+            "source": "擧子科朴",
+            "target": "擧子科朴孝",
+            "value": 30
+        },
+        {
+            "source": "子科朴孝",
+            "target": "子科朴孝修",
+            "value": 30
+        },
+        {
+            "source": "科朴孝修",
+            "target": "科朴孝修監",
+            "value": 30
+        },
+        {
+            "source": "朴孝修監",
+            "target": "朴孝修監試",
+            "value": 30
+        },
+        {
+            "source": "孝修監試",
+            "target": "孝修監試延",
+            "value": 30
+        },
+        {
+            "source": "修監試延",
+            "target": "修監試延祐",
+            "value": 30
+        },
+        {
+            "source": "監試延祐",
+            "target": "監試延祐七",
+            "value": 30
+        },
+        {
+            "source": "試延祐七",
+            "target": "試延祐七年",
+            "value": 30
+        },
+        {
+            "source": "延祐七年",
+            "target": "延祐七年庚",
+            "value": 30
+        },
+        {
+            "source": "祐七年庚",
+            "target": "祐七年庚申",
+            "value": 30
+        },
+        {
+            "source": "七年庚申",
+            "target": "七年庚申秋",
+            "value": 30
+        },
+        {
+            "source": "中秀才科",
+            "target": "中秀才科第",
+            "value": 30
+        },
+        {
+            "source": "秀才科第",
+            "target": "秀才科第二",
+            "value": 30
+        },
+        {
+            "source": "才科第二",
+            "target": "才科第二名",
+            "value": 30
+        },
+        {
+            "source": "益齋先生",
+            "target": "益齋先生李",
+            "value": 30
+        },
+        {
+            "source": "齋先生李",
+            "target": "齋先生李齊",
+            "value": 30
+        },
+        {
+            "source": "先生李齊",
+            "target": "先生李齊賢",
+            "value": 30
+        },
+        {
+            "source": "生李齊賢",
+            "target": "生李齊賢知",
+            "value": 30
+        },
+        {
+            "source": "李齊賢知",
+            "target": "李齊賢知貢",
+            "value": 30
+        },
+        {
+            "source": "齊賢知貢",
+            "target": "齊賢知貢擧",
+            "value": 30
+        },
+        {
+            "source": "朴孝修同",
+            "target": "朴孝修同知",
+            "value": 30
+        },
+        {
+            "source": "孝修同知",
+            "target": "孝修同知貢",
+            "value": 30
+        },
+        {
+            "source": "修同知貢",
+            "target": "修同知貢擧",
+            "value": 30
+        },
+        {
+            "source": "調福州司",
+            "target": "調福州司錄",
+            "value": 30
+        },
+        {
+            "source": "福州司錄",
+            "target": "福州司錄參",
+            "value": 30
+        },
+        {
+            "source": "州司錄參",
+            "target": "州司錄參軍",
+            "value": 30
+        },
+        {
+            "source": "司錄參軍",
+            "target": "司錄參軍事",
+            "value": 30
+        },
+        {
+            "source": "泰定三年",
+            "target": "泰定三年丙",
+            "value": 30
+        },
+        {
+            "source": "定三年丙",
+            "target": "定三年丙寅",
+            "value": 30
+        },
+        {
+            "source": "三年丙寅",
+            "target": "三年丙寅秋",
+            "value": 30
+        },
+        {
+            "source": "年丙寅秋",
+            "target": "年丙寅秋稼",
+            "value": 5
+        },
+        {
+            "source": "丙寅秋稼",
+            "target": "丙寅秋稼亭",
+            "value": 5
+        },
+        {
+            "source": "寅秋稼亭",
+            "target": "寅秋稼亭先",
+            "value": 5
+        },
+        {
+            "source": "秋稼亭先",
+            "target": "秋稼亭先生",
+            "value": 5
+        },
+        {
+            "source": "年丙寅秋",
+            "target": "年丙寅秋ㅍ",
+            "value": 2
+        }
+    ]
+}
