@@ -53,6 +53,7 @@ $cmd = isset($_GET['cmd']) ? $_GET['cmd'] : 'init';
               <li><a class="dropdown-item" href="index.php?cmd=intro">학과소개</a></li>
               <li><a class="dropdown-item" href="index.php?cmd=array">배열</a></li>
               <li><a class="dropdown-item" href="index.php?cmd=ngram">N-gram</a></li>
+              <li><a class="dropdown-item" href="index.php?cmd=chart">Chart</a></li>
             </ul>
           </li>
 
